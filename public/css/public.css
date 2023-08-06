@@ -1,0 +1,23 @@
+@import url(./build/scss/template/navigation.scss);
+@import url(../hero.scss);
+@import url(./build/scss/template/page/home-page/showreal.scss);
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  width: 150px;
+  height: 150px;
+  background-color: greenyellow;
+}
+
+h1 {
+  color: red;
+}
+
+/*# sourceMappingURL=public.css.map */
