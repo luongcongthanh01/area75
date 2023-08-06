@@ -1,0 +1,4 @@
+// to include
+// First have to create a new Object by SplitType() method
+const textAnimate = new SplitType("current class or id");
+//

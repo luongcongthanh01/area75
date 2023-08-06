@@ -1,6 +1,4 @@
-@import url(./build/scss/template/navigation.scss);
-@import url(../hero.scss);
-@import url(./build/scss/template/page/home-page/showreal.scss);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 body {
   margin: 0;
   box-sizing: border-box;
@@ -17,7 +15,27 @@ body {
 }
 
 h1 {
-  color: red;
+  color: blue;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+a,
+ul,
+li {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=public.css.map */

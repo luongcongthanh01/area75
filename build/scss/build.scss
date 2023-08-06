@@ -1,10 +1,6 @@
 // Gobal
 @import "config.scss";
 @import "fonts.scss";
-
-// Template
-@import url(./build/scss/template/navigation.scss);
-
-// Page
-@import url(../hero.scss);
-@import url(./build/scss/template/page/home-page/showreal.scss);
+@import "navigation.scss";
+@import "hero.scss";
+@import "showreal.scss";
