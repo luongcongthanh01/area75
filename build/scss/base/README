@@ -1,0 +1,5 @@
+//Include responsive configuration
+@include r(l){}
+@include r(xs){}
+@include r(s){}
+@include r(xl){}

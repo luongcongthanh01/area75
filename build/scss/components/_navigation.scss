@@ -15,6 +15,21 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include r(l) {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  @include r(xs) {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  @include r(s) {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  @include r(xl) {
+    overflow-x: hidden;
+  }
   &-item {
     margin-right: 20px;
     & a {

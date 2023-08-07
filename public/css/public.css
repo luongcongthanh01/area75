@@ -141,18 +141,34 @@ li {
   list-style: none;
 }
 
-* {
-  --gray: #f3f3f3;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+* {
+  --gray: #f3f3f3;
+}
+
+/** Media query
+* r = responsive
+* p = breakpoint
+* s  == Small devices min
+* xs == Small devices max
+* l  == Medium devices
+* xl  == Large devices
+*/
+html {
+  scroll-behavior: smooth;
 }
 
 /**
@@ -203,7 +219,27 @@ END*/
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 100%;
+}
+@media (max-width: 1200px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (max-width: 900px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1800px) {
+  body {
+    font-size: 16px;
+  }
 }
 
 h1,
@@ -214,6 +250,21 @@ h5,
 h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+}
+
+img {
+  object-fit: cover;
+  transform-origin: left;
+  width: inherit;
+  height: inherit;
+}
+
+.reveal {
+  visibility: hidden;
+  position: relative;
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
 }
 
 .hero {
@@ -240,6 +291,29 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 1200px) {
+  .menu {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+@media (max-width: 900px) {
+  .menu {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+@media (max-width: 600px) {
+  .menu {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+@media (min-width: 1800px) {
+  .menu {
+    overflow-x: hidden;
+  }
+}
 .menu-item {
   margin-right: 20px;
 }
@@ -263,21 +337,6 @@ nav {
 }
 .lang a:hover {
   opacity: 0.8;
-}
-
-img {
-  object-fit: cover;
-  transform-origin: left;
-  width: inherit;
-  height: inherit;
-}
-
-.reveal {
-  visibility: hidden;
-  position: relative;
-  width: inherit;
-  height: inherit;
-  overflow: hidden;
 }
 
 .flex {

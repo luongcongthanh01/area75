@@ -4,6 +4,7 @@
 @import "./base/mixin.scss";
 @import "./base/config.scss";
 @import "./base/type.scss";
+@import "./base/animations.scss";
 
 // Components
 @import "./components/hero.scss";
@@ -11,6 +12,5 @@
 @import "./components/showreal.scss";
 
 // Layout
-@import "./layout/animations.scss";
 @import "./layout/display.scss";
 @import "./layout/inset.scss";

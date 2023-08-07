@@ -1,0 +1,31 @@
+/** Media query
+* r = responsive
+* p = breakpoint
+* s  == Small devices min
+* xs == Small devices max
+* l  == Medium devices
+* xl  == Large devices
+*/
+
+@mixin r($p) {
+  @if $p == l {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+  @if $p == xs {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+  @if $p == s {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+  @if $p == xl {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+}
