@@ -200,12 +200,6 @@ UL Configuration
 /**
 UI Configuration
 END*/
-img {
-  width: inherit;
-  height: inherit;
-  object-fit: cover;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -272,15 +266,17 @@ nav {
 }
 
 img {
+  object-fit: cover;
   transform-origin: left;
+  width: inherit;
+  height: inherit;
 }
 
 .reveal {
   visibility: hidden;
   position: relative;
-  width: 80%;
-  height: 80%;
-  max-width: 500px;
+  width: inherit;
+  height: inherit;
   overflow: hidden;
 }
 
