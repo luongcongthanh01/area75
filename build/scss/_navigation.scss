@@ -1,0 +1,41 @@
+header {
+  width: 100vw;
+  height: 55px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2vw;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-item {
+    margin-right: 20px;
+    & a {
+      font-weight: 600;
+      color: black;
+    }
+    & a:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.lang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px;
+  & a {
+    font-weight: 600;
+    color: black;
+  }
+  & a:hover {
+    opacity: 0.8;
+  }
+}
