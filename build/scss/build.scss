@@ -1,6 +1,16 @@
-// Gobal
-@import "config.scss";
-@import "type.scss";
-@import "navigation.scss";
-@import "hero.scss";
-@import "showreal.scss";
+// Base
+@import "./base/reset.scss";
+@import "./base/variations.scss";
+@import "./base/mixin.scss";
+@import "./base/config.scss";
+@import "./base/type.scss";
+
+// Components
+@import "./components/hero.scss";
+@import "./components/navigation.scss";
+@import "./components/showreal.scss";
+
+// Layout
+@import "./layout/animations.scss";
+@import "./layout/display.scss";
+@import "./layout/inset.scss";
