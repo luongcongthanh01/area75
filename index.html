@@ -13,7 +13,11 @@
       <nav>
         <div class="half">
           <a href="#" class="logo">
-            <img src="logo" alt="area75-logo" class="logo-image" />
+            <img
+              src="./assets/img/logo.svg"
+              alt="area75-logo"
+              class="logo-image"
+            />
           </a>
         </div>
         <div class="half flex">
@@ -40,30 +44,24 @@
       </nav>
     </header>
     <main>
-      <section class="hero">
-        <div class="slider flex">
-          <div class="half"><h1>Bài viết đầu tiên của AREA</h1></div>
-          <div class="half reveal">
-            <img
-              src="https://bacninh.gov.vn/documents/20182/14219679/Dam+cuoi+chuot+%281%29.jpg/c403fec4-5b97-64d2-d3d9-e83774c08ba3?t=1668762167593"
-              alt=""
-              srcset=""
-            />
+      <section class="hero flex">
+        <div class="hero-left half">
+          <div class="hero-circle-brand"><span> Circle Brand</span></div>
+          <div class="hero-post-title">
+            <h1 id="#text-animate">Bài viết đầu tiên của AREA</h1>
           </div>
+          <div class="slide-btn">
+            <a href="#" class="btn-1">Silde Controller</a>
+          </div>
+        </div>
+        <div class="hero-right half reveal">
+          <img src="./assets/img/area-bg1.jpg" alt="" srcset="" />
         </div>
       </section>
       <div class="gap"></div>
     </main>
     <section class="full flex">
-      <div class="half black">
-        <div class="reveal">
-          <img
-            src="https://nld.mediacdn.vn/2018/3/2/13-em-be-om-ga-pham-quang-phuc-1520002515736609958420.jpg"
-            alt=""
-            srcset=""
-          />
-        </div>
-      </div>
+      <div class="half black"></div>
       <div class="half white">
         <div class="reveal">
           <img
@@ -84,6 +82,7 @@
       </div>
     </section>
     <!-- Script -->
+    <script src="./build/plugin/split-type/core/index.min.js"></script>
     <script src="./public/js/public.js"></script>
     <script src="./build/plugin/gsap/core/gsap.min.js"></script>
     <script src="./build/plugin/gsap/core/ScrollTrigger.min.js"></script>

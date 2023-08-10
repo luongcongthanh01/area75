@@ -9,35 +9,27 @@ nav {
   align-items: center;
   margin: 0 2vw;
   padding-top: 19px;
-}
 
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  @include r(l) {
-    overflow-x: auto;
-    overflow-y: hidden;
+  .logo {
+    width: auto;
+    height: 30px;
   }
-  @include r(xs) {
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
-  @include r(s) {
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
-  @include r(xl) {
-    overflow-x: hidden;
-  }
-  &-item {
-    margin-right: 20px;
-    & a {
-      font-weight: 600;
-      color: black;
-    }
-    & a:hover {
-      opacity: 0.8;
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    &-item {
+      a {
+        font-weight: 600;
+        color: black;
+      }
+
+      a:hover {
+        opacity: 0.8;
+      }
     }
   }
 }
@@ -46,12 +38,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 40px;
-  & a {
+
+  a {
     font-weight: 600;
     color: black;
   }
-  & a:hover {
+
+  a:hover {
     opacity: 0.8;
   }
 }

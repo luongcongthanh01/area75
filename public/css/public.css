@@ -268,9 +268,19 @@ img {
 }
 
 .hero {
-  height: 80vh;
+  height: 90vh;
+  width: 100%;
   border-top: 2px solid #eee;
   border-bottom: 2px solid #eee;
+  padding: 30px 0 30px 30px;
+}
+.hero-right {
+  max-height: 100%;
+}
+.hero-left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 header {
@@ -285,43 +295,21 @@ nav {
   margin: 0 2vw;
   padding-top: 19px;
 }
-
-.menu {
+nav .logo {
+  width: auto;
+  height: 30px;
+}
+nav .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
 }
-@media (max-width: 1200px) {
-  .menu {
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
-}
-@media (max-width: 900px) {
-  .menu {
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
-}
-@media (max-width: 600px) {
-  .menu {
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
-}
-@media (min-width: 1800px) {
-  .menu {
-    overflow-x: hidden;
-  }
-}
-.menu-item {
-  margin-right: 20px;
-}
-.menu-item a {
+nav .menu-item a {
   font-weight: 600;
   color: black;
 }
-.menu-item a:hover {
+nav .menu-item a:hover {
   opacity: 0.8;
 }
 
@@ -329,7 +317,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 40px;
 }
 .lang a {
   font-weight: 600;
